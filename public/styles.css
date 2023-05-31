@@ -1,0 +1,116 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: rgb(255, 249, 241);
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    background-color: goldenrod;
+    color: white;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.header h1{
+    margin: 0;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.main {
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.notes {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.note h4,p{
+    margin: 2px;
+}
+
+.note {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 2px 2px 5px rgb(79, 79, 79);
+    align-items:center;
+}
+
+.delete {
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    color: goldenrod;
+    position: relative;
+    left: 200px;
+    bottom: -5px;
+}
+
+.inputArea {
+    background-color: white;
+    width: 400px;
+    box-shadow: 2px 2px 5px rgb(79, 79, 79);
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 15px;
+    position: relative;
+}
+
+.inputArea .inputTitle {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+
+.inputArea .inputContent {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.inputArea .addNote {
+    background-color: rgb(255, 207, 85);
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    padding: 9px 15px 9px 15px;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
